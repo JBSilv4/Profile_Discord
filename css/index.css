@@ -1,0 +1,188 @@
+body {
+  background: #23272a;
+  color: #fff;
+  font-family: Arial;
+}
+
+.perfil {
+  background: #2c2f33;
+  width: 400px;
+  height: 495px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px hsl(0deg 0% 0% / 0.5);
+}
+
+.perfil .banner {
+  width: 400px;
+  height: 200px;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom right, #4affde 0%, #5b9dff 40%, #9f6bff 60%, #ff34d2 100%);  
+  background-size: 200% 200%;
+  animation: gradientEffect 6s linear infinite alternate;
+}
+
+@keyframes gradientEffect {
+  from { background-position: 0 0; }
+  to { background-position: 100% 100%; }
+}
+
+.perfil .foto {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  border: solid 7px #2c2f33;
+}
+
+.perfil .sobremim {
+  background: #3f4246;
+  position: absolute;
+  width: 375px;
+  height: 170px;
+  top: 63%;
+  left: 3%;
+  transform: transform(-30%, -50%);
+  border-radius: 10px;
+}
+
+.sobremim .text-sobre {
+  margin: 0;
+  padding: 5px;
+  font-size: 15px;
+}
+
+.sobremim .langs {
+  font-size: 15px;
+  padding: 5px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.sobremim .langs-icons {
+  display: flex;
+  padding: 5px;
+}
+
+.langs-icons #javascript {
+  color: #fff200;
+  font-size: 25px;
+}
+
+.langs-icons #html {
+  color: #ff6200;
+  font-size: 25px;
+}
+
+.langs-icons #css {
+  color: #00a9d3;
+  font-size: 25px;
+}
+
+.langs-icons #nodejs {
+  color: #34c342;
+  font-size: 25px;
+}
+
+.langs-icons #python {
+  color: #4878ff;
+  font-size: 25px;
+}
+
+.langs-icons #git {
+  color: #fff;
+  font-size: 25px;
+}
+
+.sobremim .info {
+  margin: 0;
+  padding: 5px;
+  line-height: 20px;
+}
+
+.perfil .name-user {
+  position: absolute;
+  top: 53%;
+  left: 5%;
+}
+
+.emblemas {
+  position: absolute;
+  left: 70%;
+  top: 44%;
+  display: flex;
+}
+
+.emblemas #security {
+  font-size: 20px;
+  color: #2467ff;
+}
+
+.emblemas #flash {
+  font-size: 20px;
+  color: #f2d000;
+}
+
+.emblemas #bug {
+  font-size: 20px;
+  color: #28ae2a;
+}
+
+.projetos {
+  position: absolute;
+  background: #2c2f33;
+  width: 400px;
+  height: 375px;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px hsl(0deg 0% 0% / 0.5);
+}
+
+.projetos .title {
+  padding: 5px;
+  background-image: linear-gradient(to bottom right, #4affde 0%, #5b9dff 40%, #9f6bff 60%, #ff34d2 100%);  
+  background-size: 200% 200%;
+  animation: textGradient 6s linear infinite alternate;
+  border-radius: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+@keyframes textGradient {
+  from { background-position: 0 0; }
+  to { background-position: 100% 100%; }
+}
+
+.text-projects {
+  padding: 5px;
+  margin: 0;
+}
+
+.text-projects h2 {
+  margin: 0;
+}
+
+.text-projects p {
+  padding: 5px 10px;
+  margin: 0;
+  background: #3f4246;
+  border-radius: 10px;
+}
+
+.fechar {
+  position: absolute;
+  top: 2%;
+  left: 95%;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+}
